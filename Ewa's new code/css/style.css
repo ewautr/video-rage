@@ -90,6 +90,14 @@ body {
     hyphens: auto;
 }
 
+.text-bold {
+    color: #555555;
+    hyphens: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+}
+
 .text:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -101,7 +109,6 @@ body {
     padding: .5rem 3rem;
     display: inline-block;
 }
-
 
 
 
@@ -218,6 +225,17 @@ iframe {
     margin-left: 4rem;
 }
 
+.about-section__links {
+    opacity: .7;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+.about-section__links:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
 /*SECTION WHY*/
 
 .why-section__container {
@@ -241,14 +259,26 @@ footer {
     display: inline-block;
     height: 4rem;
     margin-right: 2rem;
+    opacity: .7;
+    transition: all .2s ease;
+}
+
+.footer__social-media-icon:hover {
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .facebook-event-link {
-    margin-top: 3rem;
+    margin-bottom: 2rem;
     display: block;
-    border-bottom: 1px solid #0F314E;
+    transition: all .2s ease;
     width: 50rem;
     text-decoration: none;
+}
+
+.facebook-event-link:hover {
+    border-bottom: 1px solid #0F314E;
+    font-size: 3rem;
 }
 
 .footer__address {
