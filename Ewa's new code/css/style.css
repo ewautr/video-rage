@@ -150,7 +150,9 @@ nav {
 
 #milkGlass {
     width: 80%;
-    max-width: 103rem;
+    max-width: 80rem;
+    margin-left: calc(50% - 200px);
+    margin-bottom: -100px;
 }
 
 
