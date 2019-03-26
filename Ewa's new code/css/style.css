@@ -157,7 +157,9 @@ nav {
 
 #milkGlass {
     width: 80%;
-    max-width: 103rem;
+    max-width: 80rem;
+    margin-left: calc(50% - 200px);
+    margin-bottom: -100px;
 }
 
 
@@ -341,9 +343,92 @@ footer {
     }
 }
 
+/* BURGER MENU NAV */
 
+#links2 {
+    display: none;
+    width: 0px;
+    background-color: #F5E6E8;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    padding: 13.75px 20px;
+    height: 59px;
+    margin-left: -18px;
+    border-left: 0px;
+    animation: getToWidth 1.5s 1 forwards;
+    margin-left: 35px;
+    opacity: 0.95;
+}
 
+@keyframes getToWidth {
+    from {
+        width: 0px;
+    }
 
-PUT THE ANIMA LOGO ON TOP RIGHT CORNER, 
-WEIRD GLASS IN THE BURGER MENU,
-CLAW IN THE SOCIAL MEDIA
+    to {
+        width: 320px;
+    }
+}
+
+.burgerMenu {
+    width: 55px;
+    display: inline;
+    padding: 12px 15px 12px 5px;
+    background-color: #F5E6E8;
+    border-radius: 0px 20px 20px 0px;
+    opacity: .95;
+    position: absolute;
+}
+
+.burgerMenu:hover {
+    cursor: pointer;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+#links2 a {
+    font-size: 15px;
+    font-family: 'Quicksand Light';
+    color: black;
+    padding-left: 5px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+}
+
+#burgerMenuPopUp {
+    opacity: 0;
+    animation: fadeIn 2s 1 forwards;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#initialBackground {
+    background-color: var(--blueCol);
+    margin-top: -28px;
+    animation: turnToWhite 2s 2s 1 forwards;
+}
+
+@keyframes turnToWhite {
+    to {
+        background-color: white;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    #burgerMenuPopUp {
+        display: none;
+    }
+}

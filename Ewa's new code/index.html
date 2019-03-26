@@ -9,10 +9,7 @@
 </head>
 
 <body>
-
-
-
-    <!--
+    
     <div id="burgerMenuPopUp" class="sticky hidden">
         <img src="images/burgerMenu.png" alt="burgerMenu" id="burgerMenuOutside" class="burgerMenu" onclick="showMenu2()" style="margin-left: -3px;">
         <div id="links2">
@@ -23,7 +20,6 @@
             <a href="#"> <i class="fas fa-paw"></i> Anima </a>
         </div>
     </div>
--->
 
     <main>
         <div class="nav_and_heading">
@@ -69,10 +65,12 @@
                 <h2 class="heading-secondary"> Daily challenges </h2>
             </div>
             <h3 class="heading-tertiary"> A fact a day keeps the doctor away </h3>
-            <div class="challenges-section__container" id="switchChallenges">
-                <img src="images/straightGlass.png" alt="straightGlass" id="straightGlass" class="straightGlassActive challenges-section__img">
-                <h4 class="heading-quaternary"> DAY #1 GET YOUR FIRST BOX OF PLANT-BASED MILK</h4>
-                <p class="text"> The best way to start your 12 day cow-milk free experience is to go to the store and find yourself a 1l of plant based milk. What are your options? Most popular vegan milks are made of soy, oats, almond and coconut and they would be our recommendation for your first plant-based milk experience. Don’t forget to try it after you come back from the store! </p>
+            
+            <div id="glasses">
+
+            </div>
+            <div id="switchChallenges">
+
             </div>
             <h3 class="heading-tertiary-swipe"> Swipe for a fun challenge of the day! </h3>
         </section>
@@ -136,5 +134,24 @@
                 35 10 70 70 <br></p>
         </div>
     </footer>
+    
+    <!-- 
+     <div class="challenges-section__container" id="switchChallenges">
+                <img src="images/straightGlass.png" alt="straightGlass" id="straightGlass" class="straightGlassActive challenges-section__img">
+                <h4 class="heading-quaternary"> DAY #1 GET YOUR FIRST BOX OF PLANT-BASED MILK</h4>
+                <p class="text"> The best way to start your 12 day cow-milk free experience is to go to the store and find yourself a 1l of plant based milk. What are your options? Most popular vegan milks are made of soy, oats, almond and coconut and they would be our recommendation for your first plant-based milk experience. Don’t forget to try it after you come back from the store! </p>
+            </div>
+    -->
+    
+        <template id="glassTemp">
+        <img src="images/straightGlass.png" alt="straightGlass" id="straightGlass" class="straightGlassActive challenges-section__img">
+        <div id="content" class="challenges-section__container">
+        <h4 class="heading-quaternary"> <span class="day"> DAY 1# </span> <span class="title"> GET YOUR FIRST BOX OF PLANT-BASED MILK </span> </h4>
+        <p class="text"> The best way to start your 12 day cow-milk free experience is to go to the store and find yourself a 1l of plant based milk. What are your options? Most popular vegan milks are made of soy, oats, almond and coconut and they would be our recommendation for your first plant-based milk experience. Don’t forget to try it after you come back from the store! </p>
+        </div>
+        </template>
+    
+    <script src="javascript/dynamic.js"> </script>
+    <script src="javascript/challenges.js"> </script>
 </body>
 </html>
