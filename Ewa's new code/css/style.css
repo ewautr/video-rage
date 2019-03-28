@@ -60,7 +60,7 @@ body {
 
 .heading-tertiary {
     color: #AEC3D3;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 100;
     letter-spacing: .4rem
@@ -105,7 +105,7 @@ body {
 .link {
     text-decoration: none;
     color: #fff;
-    font-size: 4rem;
+    font-size: 2rem;
     padding: .5rem 3rem;
     display: inline-block;
 }
@@ -118,7 +118,7 @@ nav {
     background-color: #AED9E1;
     display: grid;
     grid-template-columns: 8vw 85vw;
-    grid-template-rows: 13rem;
+    grid-template-rows: 7rem;
     grid-gap: 2rem;
 }
 
@@ -133,7 +133,7 @@ nav {
 }
 
 .nav__logo {
-    width: 8rem;
+    width: 4rem;
 }
 
 .nav__links {
@@ -155,12 +155,14 @@ nav {
     height: 3rem;
 }
 
+
 #milkGlass {
     width: 80%;
     max-width: 80rem;
-    margin-left: calc(50% - 200px);
+    margin-left: calc(50% - 300px);
     margin-bottom: -100px;
 }
+
 
 
 /*SECTION VIDEO*/
@@ -197,7 +199,45 @@ iframe {
     margin-bottom: 2rem;
 }
 
+
+
+/*TEMPLATE STYLING*/
+
+
+#content {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+#switchChallenges {
+    background-color: #f7f7f7;
+    padding: 2rem 0; 
+}
+
+#glasses {
+    width: 41rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 4rem
+}
+
+#straightGlass {
+    height: 10rem;
+    opacity: .5;
+    transition: all .2s ease;
+}
+
+#straightGlass:hover {
+    transform: scale(1.3) rotate(50deg);
+    opacity: 1;
+}
+
+
 /*SECTION ABOUT*/
+
 
 .about-section__container {
     margin-top: 10rem;
@@ -235,6 +275,8 @@ iframe {
     opacity: 1;
     transform: scale(1.2);
 }
+
+
 
 /*SECTION WHY*/
 
@@ -334,6 +376,7 @@ footer {
     .heading-tertiary-swipe {
         font-size: 2rem;
     }
+    
 }
 
 @media only screen and (max-width: 420px) {
