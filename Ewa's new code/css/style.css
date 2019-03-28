@@ -286,6 +286,49 @@ iframe {
     padding: 3rem 2rem;
 }
 
+.why-heading-3 {
+    letter-spacing: .2rem;
+}
+
+.benefits-list {
+    display: block;
+    padding-top: 4rem;
+}
+
+.benefits-items {
+    font-size: 1.6rem;
+    list-style: none;
+}
+
+.benefits-items::before {
+    display: inline-block;
+    content: "•"; 
+    color: #AED9E1;
+    font-size: 3rem;
+    padding-right: 1rem;
+    transform: translateY(.6rem);
+    }
+
+.reality-list {
+    display: block;
+    padding-top: 4rem;
+    text-align: right;
+}
+
+.reality-items {
+    font-size: 1.6rem;
+    list-style: none;
+}
+
+.reality-items::after {
+    display: inline-block;
+    content: "•"; 
+    color: #AED9E1;
+    font-size: 3rem;
+    padding-left: 1rem;
+    transform: translateY(.6rem);
+    }
+
 
 /*FOOTER*/
 
