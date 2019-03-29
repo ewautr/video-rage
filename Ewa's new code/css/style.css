@@ -329,6 +329,29 @@ iframe {
     transform: translateY(.6rem);
     }
 
+.experts-list {
+    display: grid;
+    padding-top: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 1fr 1fr;
+    justify-items:left;
+    grid-gap: 3rem;
+    
+}
+
+.experts-heading {
+    grid-column: 1/-1;
+}
+
+.experts-items {
+    font-size: 1.6rem;
+    list-style: none;
+}
+
+.experts-icon {
+    width: 10rem;
+}
+
 
 /*FOOTER*/
 
